@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+
+code {
+  color: rgb(252, 185, 226);
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todoapp {
+  display: block;
+  width: 50%;
+  font-size: 22px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.todo-form {
+  display: block;
+  text-align: center;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.toggle-all~label {
+  width: 60px;
+  height: 34px;
+  font-size: 0;
+  position: absolute;
+  position: absolute;
+  top: 23%;
+  left: 0%;
+  transform: rotate(90deg);
+}
+
+.toggle-all~label::before {
+  content: "❯";
+  font-size: 22px;
+  color: #e6e6e6;
+  padding: 10px 27px 10px 27px;
+}
+
+.new-todo {
+  font-size: 22px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 60px;
+  line-height: 1.4em;
+  border: none;
+  margin: 0;
+  background: rgb(254, 254, 254);
+  box-shadow: 2px 5px 10px #dfdfde;
+}
+
+.new-todo:focus {
+  outline: none;
+}
+
+.new-todo::placeholder {
+  font-style: italic;
+  color: rgb(230, 230, 230);
+}
+
+.footer {
+  color: #777;
+  padding: 10px 15px;
+  height: 25px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgb(0 0 0 / 20%), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgb(0 0 0 / 20%);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer button {
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #cbc4c4;
+}
+
+button {
+  margin: 5px;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  font-size: 22px;
+  border-bottom: 1px solid #ededed;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  overflow: scroll;
+  height: 300px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+  height: 36px;
+}
+
+
+li .first {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.todo-list li .btn-close {
+  background: white;
+  border: none;
+  font-size: 20px;
+  color: #cc9a9a;
+  cursor: pointer;
+}
+
+.todo-list li .btn-close:hover {
+  color: #af5b5e;
+}
+
+
+input[type=checkbox] {
+  font-size: 12px;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+  background-position: center;
+  background-position-x: 2rem;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+
+input[type=checkbox]:checked+li {
+  text-decoration: line-through;
+}
+
+.input-edit {
+  position: relative;
+  width: 408px;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px;
+  outline: none;
+  margin-left: -10px;
+}
+
+.double {
+  width: 100%;
+  display: flex;
+  margin-left: 20px;
+}
+
+.btn-edit {
+  margin-right: 30px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.dark {
+  background: #FF7BA9;
+  color: #fff;
+}
+
+.slideOne {
+  width: 80px;
+  height: 30px;
+  background: #777;
+  margin: 20px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.slideOne label {
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  cursor: pointer;
+  background: #FF7BA9;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.slideOne input[type=checkbox] {
+  visibility: hidden;
+}
+
+.slideOne input[type=checkbox]:checked+label {
+  left: 50px;
+}
+
+label {
+  color: #777;
+}
