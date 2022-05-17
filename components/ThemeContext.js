@@ -17,9 +17,9 @@ const ThemeProvider = () => {
     return (
         <ThemeContext.Provider value={theme}>
             <div className={theme}>
-                <div class="slideOne">
+                <div className="slideOne">
                     <input type="checkbox" value="None" id="slideOne" name="check" onClick={toggleTheme} />
-                    <label style={{ background: theme === 'light' ? '#FF7BA9' : '#fff' }} for="slideOne"></label>
+                    <label style={{ background: theme === 'light' ? '#FF7BA9' : '#fff' }} htmlFor="slideOne"></label>
                 </div>
                 <TodoList />
             </div>

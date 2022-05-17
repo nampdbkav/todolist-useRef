@@ -27,7 +27,7 @@ const TodoList = ({ page, todo }) => {
 
     const [todos, setTodos] = useState([])
     const [todoShow, setTodoShow] = useState('all')
-    const [checkAll, setCheckAll] = useState('true')
+    const [checkAll, setCheckAll] = useState(true)
     const [editTarget, setEditTarget] = useState(-1) // -1 = create
 
     const headerRef = useRef(null)
